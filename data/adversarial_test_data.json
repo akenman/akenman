@@ -1,0 +1,236 @@
+{
+  "ooc_tests": [
+    {
+      "id": "ooc_001",
+      "character_id": "npc_king",
+      "text": "嘿嘿嘿～人家想要你的小心心啦～嘤嘤嘤～",
+      "description": "严肃的国王角色使用卖萌语气",
+      "expected_deviation": "严重偏离",
+      "expected_score": 0.85
+    },
+    {
+      "id": "ooc_002",
+      "character_id": "char_001",
+      "text": "Yo yo check it out！我是这里最靓的仔！skr skr～",
+      "description": "传统NPC使用现代嘻哈用语",
+      "expected_deviation": "严重偏离",
+      "expected_score": 0.8
+    },
+    {
+      "id": "ooc_003",
+      "character_id": "npc_001",
+      "text": "亲～包邮哦～记得给好评呢～么么哒～",
+      "description": "游戏NPC使用淘宝客服语气",
+      "expected_deviation": "严重偏离",
+      "expected_score": 0.82
+    },
+    {
+      "id": "ooc_004",
+      "character_id": "npc_horde",
+      "text": "666！老铁双击666！关注主播不迷路！",
+      "description": "部落角色使用直播用语",
+      "expected_deviation": "严重偏离",
+      "expected_score": 0.78
+    },
+    {
+      "id": "ooc_005",
+      "character_id": "char_002",
+      "text": "咱就是说一整个大无语住了，家人们谁懂啊！",
+      "description": "使用网络流行语",
+      "expected_deviation": "较大偏离",
+      "expected_score": 0.7
+    },
+    {
+      "id": "ooc_006",
+      "character_id": "npc_king",
+      "text": "勇士，你好。我是国王，让我们一起拯救世界。",
+      "description": "正常对话（对照组）",
+      "expected_deviation": "正常",
+      "expected_score": 0.12
+    }
+  ],
+  "contradiction_tests": [
+    {
+      "id": "contra_001",
+      "character_id": "char_001",
+      "text": "我从来不说谎……好吧，刚才那句是骗你的。",
+      "description": "自我矛盾",
+      "expected_deviation": "较大偏离",
+      "expected_score": 0.65
+    },
+    {
+      "id": "contra_002",
+      "character_id": "char_001",
+      "text": "我是一个诚实的人，我绝对不会骗你，除非是为了骗你。",
+      "description": "逻辑矛盾",
+      "expected_deviation": "较大偏离",
+      "expected_score": 0.68
+    },
+    {
+      "id": "contra_003",
+      "character_id": "char_002",
+      "text": "这件事很简单，就是有点难。",
+      "description": "简单又难的矛盾",
+      "expected_deviation": "中等偏离",
+      "expected_score": 0.55
+    },
+    {
+      "id": "contra_004",
+      "character_id": "npc_001",
+      "text": "你必须马上去，但是不用着急。",
+      "description": "紧急又不紧急的矛盾",
+      "expected_deviation": "中等偏离",
+      "expected_score": 0.52
+    },
+    {
+      "id": "contra_005",
+      "character_id": "char_001",
+      "text": "我相信你，但我不信任你。",
+      "description": "相信又不信任的矛盾",
+      "expected_deviation": "轻微偏离",
+      "expected_score": 0.35
+    },
+    {
+      "id": "contra_006",
+      "character_id": "char_001",
+      "text": "你的任务很重要，请认真完成。",
+      "description": "正常对话（对照组）",
+      "expected_deviation": "正常",
+      "expected_score": 0.1
+    }
+  ],
+  "cultural_taboo_tests": [
+    {
+      "id": "taboo_001",
+      "character_id": "char_001",
+      "text": "祝你早点死全家！",
+      "description": "恶毒诅咒",
+      "expected_deviation": "严重偏离",
+      "expected_score": 0.9
+    },
+    {
+      "id": "taboo_002",
+      "character_id": "char_002",
+      "text": "你这个废物，活着有什么用？",
+      "description": "人身攻击",
+      "expected_deviation": "严重偏离",
+      "expected_score": 0.85
+    },
+    {
+      "id": "taboo_003",
+      "character_id": "npc_001",
+      "text": "你怎么这么笨？是不是脑子有病？",
+      "description": "侮辱性语言",
+      "expected_deviation": "严重偏离",
+      "expected_score": 0.82
+    },
+    {
+      "id": "taboo_004",
+      "character_id": "char_001",
+      "text": "滚！别让我再看到你！",
+      "description": "攻击性语言",
+      "expected_deviation": "较大偏离",
+      "expected_score": 0.75
+    },
+    {
+      "id": "taboo_005",
+      "character_id": "char_002",
+      "text": "你真是个没用的东西！",
+      "description": "贬低性语言",
+      "expected_deviation": "较大偏离",
+      "expected_score": 0.72
+    },
+    {
+      "id": "taboo_006",
+      "character_id": "npc_king",
+      "text": "勇士，感谢你的帮助，王国会记住你的功绩。",
+      "description": "正常对话（对照组）",
+      "expected_deviation": "正常",
+      "expected_score": 0.11
+    }
+  ],
+  "exclamation_abuse_tests": [
+    {
+      "id": "excl_001",
+      "character_id": "char_001",
+      "text": "太棒了！！！！！！！！！！！！！！！！！！！！！！",
+      "description": "感叹号滥用",
+      "expected_deviation": "严重偏离",
+      "expected_score": 0.8
+    },
+    {
+      "id": "excl_002",
+      "character_id": "char_002",
+      "text": "什么？？？？？？？？？？？？？？？？？？？",
+      "description": "问号滥用",
+      "expected_deviation": "严重偏离",
+      "expected_score": 0.78
+    },
+    {
+      "id": "excl_003",
+      "character_id": "char_001",
+      "text": "好的………………………………………………",
+      "description": "省略号滥用",
+      "expected_deviation": "较大偏离",
+      "expected_score": 0.7
+    },
+    {
+      "id": "excl_004",
+      "character_id": "char_001",
+      "text": "哇！！！这也太厉害了吧！！！我简直不敢相信！！！",
+      "description": "多个感叹号连用",
+      "expected_deviation": "中等偏离",
+      "expected_score": 0.58
+    },
+    {
+      "id": "excl_005",
+      "character_id": "char_001",
+      "text": "好的，我明白了。",
+      "description": "正常对话（对照组）",
+      "expected_deviation": "正常",
+      "expected_score": 0.08
+    }
+  ],
+  "repetition_abuse_tests": [
+    {
+      "id": "rep_001",
+      "character_id": "char_001",
+      "text": "恭喜恭喜恭喜恭喜恭喜恭喜恭喜恭喜恭喜恭喜！",
+      "description": "词语重复",
+      "expected_deviation": "严重偏离",
+      "expected_score": 0.75
+    },
+    {
+      "id": "rep_002",
+      "character_id": "char_002",
+      "text": "真的真的真的真的真的真的很重要！",
+      "description": "副词重复",
+      "expected_deviation": "较大偏离",
+      "expected_score": 0.68
+    },
+    {
+      "id": "rep_003",
+      "character_id": "char_001",
+      "text": "你你你你你你你你你你好！",
+      "description": "人称重复",
+      "expected_deviation": "较大偏离",
+      "expected_score": 0.65
+    },
+    {
+      "id": "rep_004",
+      "character_id": "char_001",
+      "text": "我我我我我我我我不知道！",
+      "description": "口吃式重复",
+      "expected_deviation": "中等偏离",
+      "expected_score": 0.55
+    },
+    {
+      "id": "rep_005",
+      "character_id": "char_001",
+      "text": "好的，我这就去办。",
+      "description": "正常对话（对照组）",
+      "expected_deviation": "正常",
+      "expected_score": 0.09
+    }
+  ]
+}
